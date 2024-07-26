@@ -1,0 +1,134 @@
+2024-07-26 19:15:24,782 - Starting dataset download...
+2024-07-26 19:15:32,342 - Extracting dataset...
+2024-07-26 19:15:32,986 - Dataset download and extraction completed.
+2024-07-26 19:16:41,350 - Starting dataset download...
+2024-07-26 19:16:48,520 - Extracting dataset...
+2024-07-26 19:16:49,148 - Dataset download and extraction completed.
+2024-07-26 19:38:54,210 - INFO - Found new data file
+2024-07-26 19:39:14,406 - INFO - Loaded the file and split data
+2024-07-26 19:39:14,507 - INFO - Data split into training and validation sets.
+2024-07-26 19:40:19,222 - INFO - Model trained and saved.
+2024-07-26 19:40:21,855 - INFO - Received predictions
+2024-07-26 19:40:21,855 - INFO - Validation Accuracy: 1.00
+2024-07-26 19:40:21,855 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      BROKEN       0.00      0.00      0.00         1
+      NORMAL       1.00      1.00      1.00     36700
+  RECOVERING       1.00      1.00      1.00      2611
+
+    accuracy                           1.00     39312
+   macro avg       0.67      0.67      0.67     39312
+weighted avg       1.00      1.00      1.00     39312
+
+2024-07-26 19:40:23,382 - INFO - Saving image2 anomaly_plot_sensor_01.png
+2024-07-26 19:40:23,382 - INFO - Processing new data from C:/Users/mozhdeh/Desktop/programming 4\test_data_august.csv
+2024-07-26 19:40:24,314 - INFO - Received predictions for new data
+2024-07-26 19:40:24,314 - INFO - Saving predictions
+2024-07-26 19:40:24,329 - INFO - Configuration loaded from application.json
+2024-07-26 19:43:54,282 - INFO - Found new data file
+2024-07-26 19:44:14,405 - INFO - Loaded the file and split data
+2024-07-26 19:44:14,499 - INFO - Data split into training and validation sets.
+2024-07-26 19:45:22,134 - INFO - Model trained and saved.
+2024-07-26 19:45:25,185 - INFO - Received predictions
+2024-07-26 19:45:25,185 - INFO - Validation Accuracy: 1.00
+2024-07-26 19:45:25,185 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      BROKEN       0.00      0.00      0.00         1
+      NORMAL       1.00      1.00      1.00     36700
+  RECOVERING       1.00      1.00      1.00      2611
+
+    accuracy                           1.00     39312
+   macro avg       0.67      0.67      0.67     39312
+weighted avg       1.00      1.00      1.00     39312
+
+2024-07-26 19:45:26,977 - INFO - Saving image2 anomaly_plot_sensor_01.png
+2024-07-26 19:45:26,977 - INFO - Processing new data from C:/Users/mozhdeh/Desktop/programming 4\test_data_august.csv
+2024-07-26 19:45:28,269 - INFO - Received predictions for new data
+2024-07-26 19:45:28,269 - INFO - Saving predictions
+2024-07-26 19:45:28,269 - INFO - Configuration loaded from application.json
+2024-07-26 19:49:00,120 - INFO - Loading data from C:/Users/mozhdeh/Desktop/programming 4\sensor.csv
+2024-07-26 19:49:19,733 - INFO - Data loaded, split, and saved.
+2024-07-26 19:49:19,875 - INFO - Data split into training and validation sets.
+2024-07-26 19:50:28,125 - INFO - Model trained and saved.
+2024-07-26 19:50:31,253 - INFO - Validation Accuracy: 1.00
+2024-07-26 19:50:31,253 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      BROKEN       1.00      0.00      0.00         1
+      NORMAL       1.00      1.00      1.00     36700
+  RECOVERING       1.00      1.00      1.00      2611
+
+    accuracy                           1.00     39312
+   macro avg       1.00      0.67      0.67     39312
+weighted avg       1.00      1.00      1.00     39312
+
+2024-07-26 19:50:33,876 - INFO - Anomaly plot saved to C:/Users/mozhdeh/Desktop/programming 4\anomaly_plot_sensor_01.png
+2024-07-26 19:50:33,876 - INFO - Processing new data from C:/Users/mozhdeh/Desktop/programming 4\test_data_august.csv
+2024-07-26 19:50:35,614 - INFO - Configuration loaded from application.json
+2024-07-26 19:54:08,778 - INFO - ModelPipeline initialized.
+2024-07-26 19:54:08,778 - INFO - Running pipeline with input data path C:/Users/mozhdeh/Desktop/programming 4\sensor.csv
+2024-07-26 19:54:08,778 - INFO - Loading data from C:/Users/mozhdeh/Desktop/programming 4\sensor.csv
+2024-07-26 19:54:32,335 - INFO - Data loaded and saved: C:/Users/mozhdeh/Desktop/programming 4\train_data.csv, C:/Users/mozhdeh/Desktop/programming 4\val_data_july.csv, C:/Users/mozhdeh/Desktop/programming 4\test_data_august.csv
+2024-07-26 19:54:32,503 - INFO - Data split into training and validation sets.
+2024-07-26 19:54:50,924 - INFO - Model trained and saved to C:/Users/mozhdeh/Desktop/programming 4\model.pkl
+2024-07-26 19:54:54,117 - INFO - Validation Accuracy: 1.00
+2024-07-26 19:54:54,117 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      BROKEN       1.00      0.00      0.00         1
+      NORMAL       1.00      1.00      1.00     36700
+  RECOVERING       1.00      1.00      1.00      2611
+
+    accuracy                           1.00     39312
+   macro avg       1.00      0.67      0.67     39312
+weighted avg       1.00      1.00      1.00     39312
+
+2024-07-26 19:54:57,091 - INFO - Anomaly plot saved to C:/Users/mozhdeh/Desktop/programming 4\anomaly_plot_sensor_01.png
+2024-07-26 19:54:57,091 - INFO - Processing new data from C:/Users/mozhdeh/Desktop/programming 4\test_data_august.csv
+2024-07-26 19:54:58,158 - INFO - Predictions made for new data from C:/Users/mozhdeh/Desktop/programming 4\test_data_august.csv
+2024-07-26 19:54:58,158 - INFO - ModelPipeline initialized.
+2024-07-26 19:54:58,158 - INFO - Configuration loaded from application.json
+2024-07-26 19:59:59,069 - INFO - Running pipeline
+2024-07-26 19:59:59,069 - INFO - Loading data from C:/Users/mozhdeh/Desktop/programming 4\sensor.csv
+2024-07-26 20:00:20,742 - INFO - Data loaded and saved: train_data.csv, val_data_july.csv, test_data_august.csv
+2024-07-26 20:00:20,841 - INFO - Data split into training and validation sets.
+2024-07-26 20:01:33,054 - INFO - Model trained and saved to C:/Users/mozhdeh/Desktop/programming 4\model.pkl
+2024-07-26 20:01:36,761 - INFO - Validation Accuracy: 1.00
+2024-07-26 20:01:36,761 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      BROKEN       0.00      0.00      0.00         1
+      NORMAL       1.00      1.00      1.00     36700
+  RECOVERING       1.00      1.00      1.00      2611
+
+    accuracy                           1.00     39312
+   macro avg       0.67      0.67      0.67     39312
+weighted avg       1.00      1.00      1.00     39312
+
+2024-07-26 20:01:38,752 - INFO - Anomaly plot saved to C:/Users/mozhdeh/Desktop/programming 4\anomaly_plot_sensor_01.png
+2024-07-26 20:01:38,752 - INFO - Processing new data from C:/Users/mozhdeh/Desktop/programming 4\test_data_august.csv
+2024-07-26 20:02:35,433 - INFO - Running pipeline
+2024-07-26 20:02:35,433 - INFO - Loading data from C:/Users/mozhdeh/Desktop/programming 4\sensor.csv
+2024-07-26 20:03:00,436 - INFO - Data loaded and saved: train_data.csv, val_data_july.csv, test_data_august.csv
+2024-07-26 20:03:00,561 - INFO - Data split into training and validation sets.
+2024-07-26 20:07:57,252 - INFO - Running pipeline
+2024-07-26 20:07:57,252 - INFO - Loading data from C:/Users/mozhdeh/Desktop/programming 4\sensor.csv
+2024-07-26 20:08:23,116 - INFO - Data loaded and saved: train_data.csv, val_data_july.csv, test_data_august.csv
+2024-07-26 20:08:23,251 - INFO - Data split into training and validation sets.
+2024-07-26 20:09:36,661 - INFO - Model trained and saved to C:/Users/mozhdeh/Desktop/programming 4\model.pkl
+2024-07-26 20:09:39,941 - INFO - Validation Accuracy: 1.00
+2024-07-26 20:09:39,941 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      BROKEN       0.00      0.00      0.00         1
+      NORMAL       1.00      1.00      1.00     36700
+  RECOVERING       1.00      1.00      1.00      2611
+
+    accuracy                           1.00     39312
+   macro avg       0.67      0.67      0.67     39312
+weighted avg       1.00      1.00      1.00     39312
+
+2024-07-26 20:09:41,746 - INFO - Anomaly plot saved to C:/Users/mozhdeh/Desktop/programming 4\anomaly_plot_sensor_01.png
+2024-07-26 20:09:41,746 - INFO - Processing new data from C:/Users/mozhdeh/Desktop/programming 4\test_data_august.csv
