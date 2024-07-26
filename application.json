@@ -1,7 +1,0 @@
-{
-    "input_dir": "C:/Users/mozhdeh/Desktop/programming 4/input",
-    "output_dir": "C:/Users/mozhdeh/Desktop/programming 4/output",
-    "img_dir": "C:/Users/mozhdeh/Desktop/programming 4/img",
-    "sensor_names": ["sensor_01", "sensor_02"],
-    "interval": 10
-}
