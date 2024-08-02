@@ -1,0 +1,13 @@
+@startuml
+actor User
+User -> main : Start execution
+main -> FileDownloader : Initialize and call download_hsrm_files
+FileDownloader -> FileDownloader : Download files
+main -> HsmrReportsFetcher : Initialize and call fetch_files
+HsmrReportsFetcher -> HsmrReportsFetcher : Fetch and process files
+main -> HsmrReportHandler : Initialize and call handle_hsrm_reports
+HsmrReportHandler -> HsmrReportHandler : Handle reports
+main -> CcsHospitalDataExtracter : Initialize and call extract_ccs_data
+CcsHospitalDataExtracter -> CcsHospitalDataExtracter : Extract data
+CcsHospitalDataExtracter -> CcsHospitalDataExtracter : Generate reports
+@enduml
