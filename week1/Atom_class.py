@@ -12,6 +12,10 @@ class Atom:
         self.atomic_number = atomic_number
         self.neutrons = neutrons
 
+# I know that PEP requires you to document all the methods, but personally 
+# (and more important persons than me) dislike methods whose docstring is longer
+# than the method itself, especially if the method is clear in itself (like getters
+# and setters, which is not very pythonic anyway).
     def proton_number(self):
         """
         returning the number of protons in the atom, which is the atomic number.
@@ -53,6 +57,7 @@ class Atom:
         """
         if not isinstance(other, Atom):
             return False
+        # So two isotopes are not the same atom? That is a specific design decision.
         return self.symbol == other.symbol and self.mass_number() == other.mass_number()
 
     def __lt__(self,other):
@@ -94,6 +99,8 @@ class Atom:
             raise ValueError("Comparisons must be between isotopes of the same element.")
         return self < other or self == other
 
+    # you could just return the opposite of the corresponding mathematical
+    # method; that makes your code less clutterered.
     def __gt__(self, other):
         """
         Checking if this Atom instance is greater than another Atom instance.

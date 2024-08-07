@@ -31,6 +31,8 @@ class BasePipeline(ABC):
             config_path (str): Path to the configuration JSON file.
         """
         self.config_path = config_path
+
+        # Again why do you need to initialize all these fields with a value of None?
         self.input_dir = None
         self.output_dir = None
         self.img_dir = None
@@ -83,6 +85,7 @@ class BasePipeline(ABC):
                             format='%(asctime)s - %(levelname)s - %(message)s')
         logging.info("Logging setup complete.")
 
+# Again a way too complex class
 class ProductionPipeline(BasePipeline):
     """
      implementation of a production pipeline.

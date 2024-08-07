@@ -32,6 +32,8 @@ class Chloroplast:
         if self.co2 >= 6 and self.water >= 12:
             self.co2 -= 6
             self.water -= 12
+
+            # You should return a tuple of Molecules and numbers, not of strings and numbers.
             return [('C6H12O6',1), ('O2',6)]
         
         return []

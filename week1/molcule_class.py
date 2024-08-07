@@ -8,10 +8,11 @@ class Molecule:
         Parameters:
         atoms (list of tuples): Each tuple contains an Atom object and the number of atoms of that type.
         """
+        # Nice input validation
         if not all(isinstance(item, tuple) and len(item) == 2 and isinstance(item[0], Atom) and isinstance(item[1], int) for item in atoms):
             raise ValueError("Each element in the atoms list must be a tuple of Atom and int.")
         
-        self.atoms = atoms  # storingthe list of (Atom, count) tuples
+        self.atoms = atoms  # storing the list of (Atom, count) tuples
 
     def __str__(self):
         """
@@ -29,6 +30,7 @@ class Molecule:
         return ''.join(formula_parts)
 
     def __add__(self, other):
+        # A very complex method to do a relative simple task, but sure.
         """
         Adding two Molecule objects together.
         Parameters:

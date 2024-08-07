@@ -1,8 +1,8 @@
 
 Overview:
 
-This repository contains working  on a relative big application  called pipeline. The process has been divided in several classes such as dataset_loader, pipeline_model, pipeline_production that work independently and are used as module in the main script. In the classed definition we used interface seggregation, inheritance, lisko substituion principle, Dependency inversion principle, paralization and generator.
-The pipeline data has been loaded by data_loader moduel following by spliting the data in train and test sections, transforming the trained data following by training  the model. After evaluating the model, it will be used as a model to predict the future data.
+This repository contains working on a relative big application called 'pipeline'. The process has been divided in several classes such as `dataset_loader`, `pipeline_model`, and  `pipeline_production` that work independently and are used as module in the main script. In the classes definitions we used interface seggregation, inheritance, lisko substituion principle, Dependency inversion principle, paralization and generator.
+The pipeline data has been loaded by the `data_loader` module followed by spliting the data in train and test sections, transforming the trained data following by training the model. After evaluating the model, it will be used as a model to predict the future data.
 
 
 Purpose:
@@ -11,19 +11,19 @@ Develop a functional anomaly detection pipeline that can process new incoming da
 
 Methodology:
 
-- Data underestanding
+- Data understanding
 - Data prepration
 - Modeling
-- Evalution
+- Evaluation
 - Development
 
 Data process:
 
-- Data Preparation(Download, removing nan values, Split Data,Save these splits as separate files)
+- Data Preparation (download, removing `NaN` values, Split Data, Save these splits as separate files)
 
-- Model Creation and Transformation(Train the Model,Use the training data (April to June) to train a model for anomaly detection,transformations, training model and saving)
+- Model Creation and Transformation (Train the Model, Use the training data (April to June) to train a model for anomaly detection, transformations, training model and saving)
 
-- Refactor Plotting Function(Refactor to Remove dependency on global variables,Return the plot instead of displaying it)
+- Refactor Plotting Function (Refactor to Remove dependency on global variables, Return the plot instead of displaying it)
  
 - Model Evaluation
 

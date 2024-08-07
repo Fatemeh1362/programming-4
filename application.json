@@ -1,9 +1,9 @@
 {
-    "input_directory": "C:/Users/mozhdeh/Desktop/programming 4/input",
-    "output_directory": "C:/Users/mozhdeh/Desktop/programming 4/output",
-    "img_directory": "C:/Users/mozhdeh/Desktop/programming 4/img",
+    "input_directory": "input",
+    "output_directory": "output",
+    "img_directory": "imgs",
     "sensors_to_plot": ["sensor04", "sensor51"],
     "check_interval": 30,
-    "model_path": "C:/Users/mozhdeh/Desktop/programming 4/model.pkl"
+    "model_path": "model.joblib"
   }
   

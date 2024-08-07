@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.preprocessing import StandardScaler
 
+# this class is doing way too much: it is loading data, fitting models, plotting images, etc.
+# You should really seperate those in different classes (remember SPR).
 class ModelPipeline:
     """
     A class for managing the machine learning pipeline, including data processing,
@@ -26,6 +28,9 @@ class ModelPipeline:
         self.model_path = model_path
         self.data_dir = data_dir
         self.model = RandomForestClassifier(random_state=42)
+
+        # Do you really need all these fields? And why initialize them as None? If the purpose
+        # is to load them in a later method, we can just inject them into the object there.
         self.train_df = None
         self.val_df = None
         self.test_df = None

@@ -16,6 +16,7 @@ class DatasetDownloader:
         self.api_url = api_url
         self.destination_folder = destination_folder
 
+    # Shouldn't this be an async-method, as it is trying to download data?
     def download_dataset(self):
         """
         Download the dataset from Kaggle and extract it into the destination folder.
