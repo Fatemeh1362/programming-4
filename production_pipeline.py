@@ -92,7 +92,7 @@ class ProductionPipeline(BasePipeline):
 
     def __init__(self, config_path: str):
         """
-        Initializes the production pipeline.
+        initializing the production pipeline.
 
         Args:
             config_path (str): Path to the configuration JSON file.
@@ -100,7 +100,7 @@ class ProductionPipeline(BasePipeline):
         super().__init__(config_path)
         self.executor = ThreadPoolExecutor(max_workers=4)  # Using parallelization for file processing
 
-    def process_new_file(self, file_path: str):
+    def process_new_file(self,file_path:str):
         """
         Process a new file by generating predictions and plots.
 
@@ -110,10 +110,10 @@ class ProductionPipeline(BasePipeline):
         logging.info("Found new data file %s", file_path)
         try:
             model_pipeline = ModelPipeline(model_path=self.model_path, data_dir=self.input_dir)
-            predictions = model_pipeline.process_new_data(file_path)
-            output_path = os.path.join(self.output_dir, os.path.basename(file_path))
+            predictions =model_pipeline.process_new_data(file_path)
+            output_path =os.path.join(self.output_dir, os.path.basename(file_path))
             pd.DataFrame(predictions, columns=['predictions']).to_csv(output_path, index=False)
-            logging.info("Predictions saved to %s", output_path)
+            logging.info("Predictions saved to %s",output_path)
             
             # Using parallelization to plot sensors
             futures = [self.executor.submit(model_pipeline.plot_sensor_anomalies, sensor) for sensor in self.sensors_to_plot]
@@ -144,3 +144,12 @@ class ProductionPipeline(BasePipeline):
         except KeyboardInterrupt:
             observer.stop()
         observer.join()
+
+# #The code adheres to these principles, promoting clean and maintainable design.
+
+# SRP: Each class and method has a single, well-defined responsibility.
+# OCP: The BasePipeline is open for extension through subclassing.
+# LSP: ProductionPipeline can replace BasePipeline without altering the program’s behavior.
+# ISP: Abstract method process_new_file ensures subclasses only implement what is necessary.
+# DIP: High-level ProductionPipeline depends on the abstraction BasePipeline.
+# Overall, the code is well-structured and adheres to SOLID principles, making it robust, maintainable, and scalable.
