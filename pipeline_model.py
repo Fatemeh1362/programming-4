@@ -206,3 +206,24 @@ class ModelPipeline:
         
         predictions = self.process_new_data(os.path.join(self.data_dir, 'test_data_august.csv'))
         print("Predictions for new data:\n", predictions)
+        
+# #Single Responsibility Principle (SRP)
+# Each method in the ModelPipeline class is responsible for a single part of the functionality:
+
+# load_data: Responsible for loading and preprocessing the data.
+# split_data: Handles the splitting of data into training and validation sets.
+# transform_data: Takes care of scaling the data.
+# train_model: Manages the training of the model and saving it.
+# evaluate_model: Evaluates the model using the validation data and logs the results.
+# plot_sensor_anomalies: Plots and saves sensor anomaly data.
+# process_new_data: Processes new data for predictions.
+# run_pipeline: Orchestrates the entire pipeline by calling the other methods in sequence.
+# Open/Closed Principle (OCP)
+# The class is open for extension but closed for modification. New functionalities can be added by extending the class or adding new methods without changing the existing code.
+# Liskov Substitution Principle (LSP)
+# Any subclass that extends ModelPipeline can replace it without altering the correctness of the program. For example, a subclass can override load_data to change how data is loaded while keeping the rest of the pipeline intact.
+# Interface Segregation Principle (ISP)
+# The class methods are highly specific and only perform one task, ensuring that any changes or extensions will not affect unrelated parts of the class.
+# Dependency Inversion Principle (DIP)
+# The class depends on abstractions (interfaces) rather than concrete implementations. It uses standard libraries (joblib, pandas, logging, matplotlib, seaborn, sklearn) which can be easily replaced or mocked for testing.
+# Conclusion
